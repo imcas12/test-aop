@@ -1,0 +1,43 @@
+<mat-toolbar color="primary">
+  <div fxHide.gt-xs>
+    <button mat-icon-button (click)="onToggleSidenav()">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
+  <div>
+    <a href="https://www.aopcongress.com/en" title="Advanced Ophthalmologic Practice">
+      <img src="https://www.aopcongress.com/img/aop/aop-logo.svg" class="aop-logo" alt="">
+      <span>Advanced Ophthalmologic Practice</span>
+    </a>
+  </div>
+  <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
+    <ul fxLayout fxLayoutGap="15px" class="navigation-items">
+      <li>
+        <a href="https://www.aopcongress.com/en/attend/aop-paris-2020" title="Attend">Attend</a>
+      </li>
+      <li>
+        <a href="https://www.aopcongress.com/en/exhibit/aop-paris-2020" title="Exhibit">Exhibit</a>
+      </li>
+      <li>
+        <a href="https://www.aopcongress.com/en/about" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="">About</a>
+      </li>
+
+      <li>
+        <a href="https://www.aopcongress.com/en/login">Login</a>
+      </li>
+      <li>
+        <a class="aop-button-account aop-button-lined dark-pink" href="https://www.aopcongress.com/en/account/create" title="">Create an account</a>
+      </li>
+      <li>
+        <a class="aop-button-account aop-button-lined aop-academy-button aop-button-rounded blue" href="https://www.aopcongress.com/en/academy/home" title="">AOP Academy</a>
+      </li>
+      <li>
+        <span class="aop-language-flag-wrapper">
+          <a hreflang="en" href="https://www.aopcongress.com/en" title="English"><img src="https://www.aopcongress.com/img/flags/en.png"></a>
+          <a hreflang="fr" href="https://www.aopcongress.com/fr" title="français"><img src="https://www.aopcongress.com/img/flags/fr.png"></a>
+        </span>
+      </li>
+    </ul>
+  </div>
+
+</mat-toolbar>
