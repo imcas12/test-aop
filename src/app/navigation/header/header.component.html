@@ -1,16 +1,21 @@
 <mat-toolbar color="primary">
-  <div fxHide.gt-xs>
+  <div fxHide fxShow.lt-lg>
     <button mat-icon-button (click)="onToggleSidenav()">
       <mat-icon>menu</mat-icon>
     </button>
   </div>
+    <div>
+        <a href="https://www.aopcongress.com/en" title="Advanced Ophthalmologic Practice">
+            <img src="https://www.aopcongress.com/img/aop/aop-logo.svg" class="aop-logo" alt="">
+        </a>
+    </div>
   <div>
     <a href="https://www.aopcongress.com/en" title="Advanced Ophthalmologic Practice">
-      <img src="https://www.aopcongress.com/img/aop/aop-logo.svg" class="aop-logo" alt="">
-      <span>Advanced Ophthalmologic Practice</span>
+      <!--<img src="https://www.aopcongress.com/img/aop/aop-logo.svg" class="aop-logo" alt="">-->
+      Advanced Ophthalmologic Practice
     </a>
   </div>
-  <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
+  <div fxFlex fxLayout fxLayoutAlign="end" fxHide fxShow.gt-md>
     <ul fxLayout fxLayoutGap="15px" class="navigation-items">
       <li>
         <a href="https://www.aopcongress.com/en/attend/aop-paris-2020" title="Attend">Attend</a>
