@@ -2,18 +2,29 @@
   <a mat-list-item routerLink="/home" (click)="onSidenavClose()">
     <mat-icon>home</mat-icon> <span class="nav-caption">Home</span>
   </a>
-  <a mat-list-item routerLink="/owner" (click)="onSidenavClose()">
-    <mat-icon>assignment_ind</mat-icon> <span class="nav-caption">Owner Actions</span>
+  <a mat-list-item href="https://www.aopcongress.com/en/attend/aop-paris-2020" title="Attend" (click)="onSidenavClose()">
+    <span class="nav-caption">Attend</span>
   </a>
-  <a mat-list-item routerLink="#" (click)="onSidenavClose()">
-    <mat-icon>account_balance</mat-icon><span class="nav-caption">Account Actions</span>
+  <a mat-list-item href="https://www.aopcongress.com/en/exhibit/aop-paris-2020" title="Exhibit" (click)="onSidenavClose()">
+    <span class="nav-caption">Exhibit</span>
   </a>
-  <mat-list-item [matMenuTriggerFor]="menu">
-    <mat-icon>unfold_more</mat-icon>
-    <a matline>Example</a>
-  </mat-list-item>
-  <mat-menu #menu="matMenu">
-    <button mat-menu-item (click)="onSidenavClose()">View profile</button>
-    <button mat-menu-item (click)="onSidenavClose()">Add contact</button>
-  </mat-menu>
+  <a mat-list-item href="https://www.aopcongress.com/en/about" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="" (click)="onSidenavClose()">
+    <span class="nav-caption">About</span>
+  </a>
+  <a mat-list-item href="https://www.aopcongress.com/en/login" (click)="onSidenavClose()">
+    <span class="nav-caption">Login</span>
+  </a>
+  <a mat-list-item href="https://www.aopcongress.com/en/account/create">
+    <a class="nav-caption aop-button-account aop-button-lined dark-pink">Create an account</a>
+  </a>
+  <a mat-list-item href="https://www.aopcongress.com/en/academy/home">
+    <a class="nav-caption aop-button-account aop-button-lined aop-academy-button aop-button-rounded blue">AOP Academy</a>
+  </a>
+  <br>
+  <span class="aop-language-flag-wrapper">
+      <a hreflang="en" href="https://www.aopcongress.com/en" title="English"><img src="https://www.aopcongress.com/img/flags/en.png"></a>
+  </span>
+  <span class="aop-language-flag-wrapper">
+    <a hreflang="fr" href="https://www.aopcongress.com/fr" title="français"><img src="https://www.aopcongress.com/img/flags/fr.png"></a>
+  </span>
 </mat-nav-list>

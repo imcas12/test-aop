@@ -12,17 +12,41 @@ a:hover, a:active{
 .aop-logo {
   height: 39px;
   margin-left: 15px;
-  margin-right: 8px;
+  margin-right: 0!important;
 }
 
 .navigation-items{
   list-style-type: none;
   padding: 0;
   margin: 0;
+  text-transform: uppercase;
+  color: #899099;
+  padding: 0 5px;
+  letter-spacing: .05em;
+  line-height: 1em;
+  font-size: 13px;
 }
 
 @media(max-width: 959px){
   mat-toolbar{
     border-radius: 0px;
   }
+}
+
+a.aop-button-account {
+  margin-left: 10px;
+  padding: 12px 15px;
+}
+
+.aop-button-lined.dark-pink {
+  border: 1px solid #7a2949;
+  background-color: #7a2949;
+}
+
+.aop-button-rounded.blue {
+  background-color: #5384c0;
+}
+
+.aop-language-flag-wrapper {
+  padding: 0 5px;
 }
